@@ -1,4 +1,55 @@
-<h2>Hello Yesca</h2>
-<p>
-  The time is now: <%= Time.now %>
-</p>
+<div class="content-container">
+
+  <div class="mobile-container">
+    <h1>Yesca</h1>
+    <h2>Highest Quality Cannabis Products Coming Summer 2018</h2>
+    <%= image_tag("yesca-title.svg", alt: "yesca", class: "yesca-title")%>
+    <%= image_tag("green-blue-gradient.png", alt: "green and blue gradient", class: "gradient")%>
+
+    <p>
+      Hightest Quality Cannabis Products
+    </p>
+    <p class="i">
+      Coming Summer 2018
+    </p>
+  </div>
+
+  <div class="product-container">
+    <h3>
+      About
+    </h3>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      Phasellus volutpat nulla in dignissim suscipit. Nunc dignissim vestibulum
+      metus velit, cursus id ante viverra, luctus lobortis felis.
+      Morbi egestas varius faucibu
+    </p>
+    <div class="product">
+      <%= image_tag("yesca-oils.png", alt: "yesca cannabis oils", class: "oils")%>
+      <div class="label">
+        <p>CBD Oil</p>
+      </div>
+    </div>
+    <div class="product">
+      <%= image_tag("yesca-pre-roll.png", alt: "yesca cannabis pre roll", class: "pre-roll")%>
+      <div class="label">
+        <p>Pre-Rolls</p>
+      </div>
+    </div>
+    <div class="product">
+      <%= image_tag("yesca-dried-flower.png", alt: "yesca cannabis dried flower", class: "dried-flower")%>
+      <div class="label">
+        <p>Dried Flower</p>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="subscribe-container">
+  <div class="subcribe">
+    <h3>Subcribe</h3>
+    <p>Sign up with your email address to receive news and updates.</p>
+    <button type="button" name="sign-up">Sign Up</button>
+  </div>
+</div>
