@@ -15,31 +15,37 @@
   </div>
 
   <div class="product-container">
-    <h3>
-      About
-    </h3>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-      Phasellus volutpat nulla in dignissim suscipit. Nunc dignissim vestibulum
-      metus velit, cursus id ante viverra, luctus lobortis felis.
-      Morbi egestas varius faucibu
-    </p>
-    <div class="product">
-      <%= image_tag("yesca-oils.png", alt: "yesca cannabis oils", class: "oils")%>
-      <div class="label">
-        <p>CBD Oil</p>
+      <h3>
+        About
+      </h3>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Phasellus volutpat nulla in dignissim suscipit. Nunc dignissim vestibulum
+        metus velit, cursus id ante viverra, luctus lobortis felis.
+        Morbi egestas varius faucibu
+      </p>
+      <div class="product">
+        <div class="img-wrap">
+          <%= image_tag("yesca-oils.png", alt: "yesca cannabis oils", class: "oils")%>
+          <div class="label">
+            <p>CBD Oil</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="product">
-      <%= image_tag("yesca-pre-roll.png", alt: "yesca cannabis pre roll", class: "pre-roll")%>
-      <div class="label">
-        <p>Pre-Rolls</p>
+      <div class="product">
+        <div class="img-wrap">
+          <%= image_tag("yesca-pre-roll.png", alt: "yesca cannabis pre roll", class: "pre-roll")%>
+          <div class="label">
+            <p>Pre-Rolls</p>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="product">
-      <%= image_tag("yesca-dried-flower.png", alt: "yesca cannabis dried flower", class: "dried-flower")%>
-      <div class="label">
-        <p>Dried Flower</p>
+      <div class="product">
+        <div class="img-wrap">
+          <%= image_tag("yesca-dried-flower.png", alt: "yesca cannabis dried flower", class: "dried-flower")%>
+        <div class="label">
+          <p>Dried Flower</p>
+        </div>
       </div>
     </div>
   </div>
@@ -49,7 +55,42 @@
 <div class="subscribe-container">
   <div class="subcribe">
     <h3>Subcribe</h3>
-    <p>Sign up with your email address to receive news and updates.</p>
+    <p>
+    Sign up with your email address to
+      <br/>
+    receive news and updates.
+    </p>
     <button type="button" name="sign-up">Sign Up</button>
   </div>
+</div>
+
+<div class="content-container">
+  <footer>
+    <div>
+      <div class="contact">
+        <h3>CONTACT</h3>
+        <p>
+          55 Bruce Crescent, Carleton Place, ON K7C 3T3
+        </p>
+        <p>
+          <a href="#">info@yescasupply.com</a>
+        </p>
+      </div>
+      <div class="social">
+        <h3>SOCIAL</h3>
+        <p>
+          Follow us on Social Media
+        </p>
+        <p>
+          <a href="#">Instagram</a>
+          <a href="#">Twitter</a>
+          <a href="#">Facebook</a>
+          <a href="#">Slack</a>
+        </p>
+      </div>
+    </div>
+    <div class="copy-right">
+      <p>Copyright YESCA 2018</p>
+    </div>
+  </footer>
 </div>

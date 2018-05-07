@@ -34,6 +34,7 @@ time, mark, audio, video {
 
 body {
     line-height:1;
+    overflow-x: hidden;
 }
 
 article,aside,details,figcaption,figure,
@@ -129,7 +130,7 @@ body {
   color: #ffffff;
 
   .content-container {
-  max-width: 1300px;
+  max-width: 1280px;
   margin: 0 auto;
 
   h1, h2 {
@@ -185,27 +186,34 @@ body {
       display: block;
       margin-top: 160px;
 
+      .img-wrap {
+        display: block;
+        margin-left: 8.3333%;
+        width: 83.33333%;
+        position: relative;
+      }
+
       img {
         display: block; /*for the img inside your div */
         margin: 0 auto;
+        width: 100%;
       }
       img.oils {
         margin-left: 33%;
-        width: 47%;
-        max-width: 500px;
+        max-width: 48%;
       }
       img.pre-roll {
-        margin-left: 37%;
-        width: 54%;
-        max-width: 595px;
+        margin-left: 36%;
+        max-width: 57%;
       }
       img.dried-flower {
-        margin-left: 33%;
-        width: 44%;
-        max-width: 471px;
+        margin-left: 32%;
+        max-width: 44%;
       }
       .label {
+        display: block;
         p {
+          text-align: center;
           font-size: 12px;
           font-weight: bold;
         }
@@ -223,6 +231,8 @@ body {
     height: 598px;
     margin-top: 124px;
     position: relative;
+    font-size: 19px;
+    letter-spacing: 0.05em;
 
     .subcribe {
       width: 584px;
@@ -231,14 +241,66 @@ body {
       position:absolute; /*it can be fixed too*/
       left:0;
       right:0;
-      top: 50%;
+      top: 41%;
       bottom:0;
       margin:auto;
 
       max-width:100%;
       max-height:100%;
       overflow:auto;
+
+      h3 {
+        text-transform: uppercase;
+      }
+
+      button {
+        height: 35px;
+        width: 203px;
+        color: #ff0000;
+        border: #000000;
+        background-color: #000000;
+        font-size: 19px;
+        letter-spacing: 0.05em;
+        margin-top: 35px;
+      }
+      button:hover {
+        cursor: pointer;
+        border:1px solid #ffffff;
+        color: #ffffff;
+      }
     }
 
-  }
-}
+  } // subscribe-container close
+
+  footer {
+    display: block;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 52px;
+    margin-bottom: 33px;
+
+    h3 {
+      text-transform: uppercase;
+    }
+    > div {
+      display: block;
+
+      .contact, .social {
+        width: 30%;
+        display: inline-block;
+        text-align: center;
+      }
+      .contact {
+        margin-left: 20%;
+      }
+    }
+
+    .copy-right {
+      margin-top: 80px;
+      p {
+        text-align: center;
+      }
+    }
+  } // footer close
+
+} //body close
