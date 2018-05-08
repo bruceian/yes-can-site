@@ -491,6 +491,17 @@ body {
       .contact {
         margin-left: 20%;
       }
+      @media screen and (max-width: 867px) {
+        .contact {
+          margin-left: 0;
+        }
+        .social {
+          margin-top: 70px;
+        }
+        .social, .contact{
+          width: 100%;
+        }
+      }
     }
 
     .copy-right {
