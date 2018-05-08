@@ -35,6 +35,7 @@ time, mark, audio, video {
 body {
     line-height:1;
     overflow-x: hidden;
+    transition: 0.2s;
 }
 
 article,aside,details,figcaption,figure,
@@ -136,6 +137,12 @@ body {
     -moz-box-shadow: 0px 13px 30px -8px rgba(0,0,0,0.1);
     box-shadow: 0px 13px 30px -8px rgba(0,0,0,0.1);
   }
+  .not-active {
+    display: none;
+  }
+  .active {
+    display: block;
+  }
   .content-container {
   margin: 0 auto;
 
@@ -209,8 +216,22 @@ body {
         margin-bottom: 20px;
       }
       button {
+        transition: 0.2s;
         margin: auto;
         margin-bottom: 7px;
+
+        height: 35px;
+        width: 203px;
+        color: #ffff00;
+        border: #000000;
+        background-color: #000000;
+        letter-spacing: 0.05em;
+      }
+      button:hover {
+        cursor: pointer;
+        border: 1px solid #000000;
+        color: #000000;
+        background-color: #ffff00;
       }
     }
   }
@@ -284,6 +305,96 @@ body {
     font-size: 19px;
     letter-spacing: 0.05em;
 
+    .pop-up {
+      width: 385px;
+      height: 518px;
+      background-color: #000000;
+      position: absolute;
+      top: 40px;
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+
+        .close {
+          width: 13px;
+          cursor: pointer;
+          color: #ffffff;
+          margin: 23px auto 15px auto;
+        }
+
+        h6 {
+          margin: auto auto 40px auto;
+          font-size: 19px;
+          display: block;
+          color: #ffffff;
+          text-align: center;
+        }
+        #post_email, #post_first_name, #post_last_name {
+          font-weight: 500;
+          border-radius: 0;
+          text-align: center;
+          width: 292px;
+          color: #ffffff;
+          background: transparent;
+          border: none;
+          border-bottom: 1px solid #ffffff;
+          display: block;
+          font-size: 19px;
+          background-color: transparent;
+        }
+        #post_email {
+          margin: 30px auto 5px auto;
+        }
+        #post_first_name {
+          margin: 30px auto 5px auto;
+        }
+        #post_last_name {
+          margin: 30px auto 5px auto;
+        }
+        #form-submit {
+          width: 203px;
+          height: 35px;
+          -webkit-appearance: none;
+          font-size: 19px;
+          background-color: white;
+          text-transform: uppercase;
+          border: 0 none;
+          cursor: pointer;
+          -webkit-border-radius: 0px;
+          display: block;
+          margin: 60px auto auto auto;
+        }
+        #input-feedback {
+          font-weight: 500;
+          position: fixed; /* or absolute */
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+        p.label {
+          font-size: 10px;
+          color: #ffffff;
+          text-align: center;
+        }
+        .disclaimer p {
+          text-align: center;
+          font-size: 9px;
+          font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
+          color: #ffffff;
+          width: 292px;
+          position: absolute;
+          left: 50%;
+          bottom: 30px;
+          transform: translate(-50%, 0%);
+        }
+      @media screen and (min-width: 1440px) {
+        div.pop-up {
+          max-width: 32%;
+          max-height: 56%;
+        }
+      }
+    }
     .subcribe {
       width: 584px;
       text-align: center;
@@ -304,6 +415,7 @@ body {
       }
 
       button {
+        transition: 0.2s;
         height: 35px;
         width: 203px;
         color: #ff0000;
