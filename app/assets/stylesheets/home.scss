@@ -365,6 +365,11 @@ body {
           display: block;
           margin: 60px auto auto auto;
         }
+        #form-submit:hover {
+          background-color: #000000;
+          color: #ffffff;
+          border: 1px solid #ffffff;
+        }
         #input-feedback {
           font-weight: 500;
           position: fixed; /* or absolute */
