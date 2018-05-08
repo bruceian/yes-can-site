@@ -17,5 +17,16 @@
 
 $(function() {
 
+  $(window).scroll(function() {
+      var height = $(window).scrollTop();
+      var navBar = $('.navbar');
+
+      if(height  > 5) {
+        navBar.addClass('box-shadow');
+      } else {
+        navBar.removeClass('box-shadow');
+      }
+  });
 
 });
+// END OF JQUERY
