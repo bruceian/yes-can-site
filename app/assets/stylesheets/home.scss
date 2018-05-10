@@ -122,7 +122,16 @@ input, select {
 
 input {
   -webkit-appearance: none;
-  box-shadow: none !important;
+  // box-shadow: none !important;
+}
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  background-color: transparent !important;
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 :-webkit-autofill {
   color: #fff !important;
@@ -161,7 +170,7 @@ body {
       overflow: hidden;
       background-color: #ffffff;
       position: fixed; /* Set the navbar to fixed position */
-      top: 0; /* Position the navbar at the top of the page */
+      top: -2px; /* Position the navbar at the top of the page */
       width: 100%;
       z-index: 10;
 
@@ -245,6 +254,11 @@ body {
         border: 1px solid #000000;
         color: #000000;
         background-color: #ffff00;
+      }
+    }
+    @media screen and (max-width: 760px) {
+      .pop-up {
+        width: 100%;
       }
     }
   }
@@ -432,7 +446,7 @@ body {
           display: block;
           margin: 60px auto auto auto;
         }
-        #form-submit:hover {
+        #form-submit:hover, #mc-embedded-subscribe:hover {
           background-color: #000000;
           color: #ffffff;
           border: 1px solid #ffffff;
@@ -465,6 +479,11 @@ body {
           max-width: 32%;
           max-height: 56%;
         }
+      }
+    }
+    @media screen and (max-width: 760px) {
+      .pop-up {
+        width: 100% !important;
       }
     }
     .subcribe {
