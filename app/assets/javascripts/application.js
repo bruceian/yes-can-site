@@ -17,6 +17,7 @@
 
 $(function() {
 
+  // Activate box-shadow navbar once scrolled
   $(window).scroll(function() {
       var height = $(window).scrollTop();
       var navBar = $('.navbar');
@@ -27,6 +28,20 @@ $(function() {
         navBar.removeClass('box-shadow');
       }
   });
+
+  // Scroll to Top on Yesca logo click
+  $(".yesca-title").on("click",function(){
+      $("html, body").animate({ scrollTop: 0 }, 500);
+      return false;
+  });
+
+  // Disable Scroll on Pop-up page
+  var popUpPage = $("#pop-up").parent();
+
+  popUpPage.css({
+    "overflow-y":"hidden"
+  })
+
 
 });
 // END OF JQUERY
