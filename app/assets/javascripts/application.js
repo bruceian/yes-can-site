@@ -80,9 +80,38 @@ $(function() {
       $('.pop-up').fadeOut(200);
     });
 
-  });
+});
 
 document.addEventListener('turbolinks:load', function() {
+  // Send Form to Google Sheet
+  $('#mc-embedded-subscribe').click(function(event){
+
+    var inputq1 = encodeURIComponent($('#mce-FNAME').val());
+    var inputq2 = encodeURIComponent($('#mce-LNAME').val());
+    var inputq3 = encodeURIComponent($('#mce-EMAIL').val());
+    var q1ID = "entry.911507023"
+    var q2ID = "entry.14723826"
+    var q3ID = "entry.138845559"
+
+    var baseURL = "https://docs.google.com/forms/d/e/1FAIpQLSeVBu7dp3WNkSuwfQ450VloVk5D0K5bKSHE3Lfhwc_uxb18Pw/formResponse?";
+    var submitRef = "&submit=1111395812031556201"
+    var submitURL = (baseURL + q1ID + "=" + inputq1 + "&" + q2ID + "=" + inputq2 + "&" + q3ID + "=" + inputq3 + submitRef);
+    $('#mc-embedded-subscribe-form')[0].action = submitURL;
+
+     //Check If Input Blank
+      if ( inputq1 == '' || inputq2 == '' || inputq3 == '') {
+        event.preventDefault();
+        $('#input-msg').text('Fields cannot be blank');
+      } else if ($('#mce-EMAIL').hasClass('invalid')) {
+        event.preventDefault();
+        $('#input-msg').text('Please provide valid email');
+      } else {
+        $('#input-msg').text('Thanks!');
+        // $('#input-msg').fadeOut(100);
+        $('#mc-embedded-subscribe-form').fadeOut(100);
+      }
+
+  });
   // Activate box-shadow navbar once scrolled
   $(window).scroll(function() {
       var height = $(window).scrollTop();
