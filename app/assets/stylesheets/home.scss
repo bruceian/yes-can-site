@@ -190,26 +190,6 @@ body {
   }
   .mobile-container {
 
-    // .navbar {
-    //   overflow: hidden;
-    //   background-color: #ffffff;
-    //   position: fixed; /* Set the navbar to fixed position */
-    //   top: -2px; /* Position the navbar at the top of the page */
-    //   width: 100%;
-    //   z-index: 10;
-    //
-    //   img.yesca-title {
-    //     width: 208px;
-    //     height: 35px;
-    //     display: block; /*for the img inside your div */
-    //     margin: 0 auto;
-    //     margin-top: 57px;
-    //     margin-bottom: 30px;
-    //     cursor: pointer;
-    //   }
-    //
-    // }
-
     img.gradient {
       max-width: 782px;
       width: 100%;
@@ -440,13 +420,14 @@ body {
         h6 {
           margin: auto auto 40px auto;
           font-size: 19px;
+          font-weight: 300;
           display: block;
           color: #ffffff;
           text-align: center;
         }
         #post_email, #post_first_name, #post_last_name,
         #mce-EMAIL, #mce-FNAME, #mce-LNAME{
-          font-weight: 500;
+          font-weight: 300;
           border-radius: 0;
           text-align: center;
           width: 292px;
@@ -457,14 +438,6 @@ body {
           display: block;
           font-size: 19px;
           background-color: transparent;
-        }
-        #post_email, #mce-EMAIL {
-          margin: 30px auto 5px auto;
-        }
-        #post_first_name, #mce-FNAME {
-          margin: 30px auto 5px auto;
-        }
-        #post_last_name, #mce-LNAME {
           margin: 30px auto 5px auto;
         }
         #form-submit, #mc-embedded-subscribe {
@@ -484,6 +457,19 @@ body {
           background-color: #000000;
           color: #ffffff;
           border: 1px solid #ffffff;
+        }
+        @media screen and (max-width: 760px) {
+          #mce-EMAIL, #mce-FNAME, #mce-LNAME {
+            width: 226px;
+            margin: 22px auto 5px auto;
+          }
+          h6 {
+            margin: auto auto 28px auto;
+            width: 84%;
+          }
+          #mc-embedded-subscribe {
+            margin: 40px auto auto auto;
+          }
         }
         #input-feedback {
           font-weight: 500;
@@ -508,6 +494,11 @@ body {
           bottom: 30px;
           transform: translate(-50%, 0%);
         }
+        @media screen and (max-width: 760px) {
+          .disclaimer p {
+            width: 84%;
+          }
+        }
       @media screen and (min-width: 1440px) {
         div.pop-up {
           max-width: 32%;
@@ -517,7 +508,7 @@ body {
     }
     @media screen and (max-width: 760px) {
       .pop-up {
-        width: 100% !important;
+        width: 84% !important;
       }
     }
     .subcribe {
