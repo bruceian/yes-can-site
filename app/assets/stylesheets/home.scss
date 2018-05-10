@@ -143,6 +143,30 @@ body {
   font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
   overflow-x: hidden;
 
+  @media screen and (max-width: 760px) {
+    .xs-display-none {
+      display: none;
+    }
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: #ffffff;
+    position: fixed; /* Set the navbar to fixed position */
+    top: -2px; /* Position the navbar at the top of the page */
+    width: 100%;
+    z-index: 10;
+
+    img.yesca-title {
+      width: 208px;
+      height: 35px;
+      display: block; /*for the img inside your div */
+      margin: 0 auto;
+      margin-top: 57px;
+      margin-bottom: 30px;
+      cursor: pointer;
+    }
+
+  }
   .box-shadow {
     -webkit-box-shadow: 0px 13px 30px -8px rgba(0,0,0,0.1);
     -moz-box-shadow: 0px 13px 30px -8px rgba(0,0,0,0.1);
@@ -166,25 +190,25 @@ body {
   }
   .mobile-container {
 
-    .navbar {
-      overflow: hidden;
-      background-color: #ffffff;
-      position: fixed; /* Set the navbar to fixed position */
-      top: -2px; /* Position the navbar at the top of the page */
-      width: 100%;
-      z-index: 10;
-
-      img.yesca-title {
-        width: 208px;
-        height: 35px;
-        display: block; /*for the img inside your div */
-        margin: 0 auto;
-        margin-top: 57px;
-        margin-bottom: 30px;
-        cursor: pointer;
-      }
-
-    }
+    // .navbar {
+    //   overflow: hidden;
+    //   background-color: #ffffff;
+    //   position: fixed; /* Set the navbar to fixed position */
+    //   top: -2px; /* Position the navbar at the top of the page */
+    //   width: 100%;
+    //   z-index: 10;
+    //
+    //   img.yesca-title {
+    //     width: 208px;
+    //     height: 35px;
+    //     display: block; /*for the img inside your div */
+    //     margin: 0 auto;
+    //     margin-top: 57px;
+    //     margin-bottom: 30px;
+    //     cursor: pointer;
+    //   }
+    //
+    // }
 
     img.gradient {
       max-width: 782px;
@@ -196,7 +220,6 @@ body {
     }
     p {
       line-height: 33px;
-      font-family: Times, Arial, "Lucida Grande", sans-serif;
       font-size: 30px;
       letter-spacing: 0px;
       color: #000000;
@@ -204,10 +227,13 @@ body {
       text-align: center;
     }
     p.tag-line {
+      font-family: Times, Arial, "Lucida Grande", sans-serif;
       margin-top: 20px;
     }
     p.i {
+      font-family: Times, Arial, "Lucida Grande", sans-serif;
       font-style: italic;
+      margin-top: 6px;
     }
     .pop-up {
       width: 385px;
@@ -258,17 +284,21 @@ body {
     }
     @media screen and (max-width: 760px) {
       .pop-up {
-        width: 100%;
+        width: 84%;
+        top: 96px;
+      }
+      p.tag-line {
+        margin-top: 27px;
       }
     }
   }
 
   @media screen and (max-width: 760px) {
     .mobile-container {
-      height: 100vh;
+      height: 95vh;
 
       p {
-        line-height: 17px !important;
+        line-height: 23px !important;
       }
     }
     img.gradient {
@@ -281,7 +311,7 @@ body {
       // height: 10%;
     }
     p.tag-line, p.i {
-      font-size: 19px;
+      font-size: 24px;
     }
     img.yesca-title {
       margin-top: 30px !important;
@@ -309,8 +339,8 @@ body {
     }
     @media screen and (max-width: 760px) {
       p {
-        font-size: 19px;
-        line-height: 17px;
+        font-size: 24px;
+        line-height: 30px;
       }
     }
     .product {
@@ -373,7 +403,11 @@ body {
   }
 
   }
-
+  @media screen and (min-width: 1280px) {
+    .content-container {
+      width: 1280px;
+    }
+  }
   .subscribe-container {
     overflow-x: hidden;
     background-color: #ff0000;
