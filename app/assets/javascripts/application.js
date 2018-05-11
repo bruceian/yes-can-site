@@ -116,11 +116,14 @@ document.addEventListener('turbolinks:load', function() {
   $(window).scroll(function() {
       var height = $(window).scrollTop();
       var navBar = $('.navbar');
+      var supply = $('body .navbar p');
 
       if(height  > 5) {
         navBar.addClass('box-shadow');
+        supply.addClass('not-active');
       } else {
         navBar.removeClass('box-shadow');
+        supply.removeClass('not-active');
       }
   });
 

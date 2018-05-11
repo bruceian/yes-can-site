@@ -156,21 +156,27 @@ body {
     width: 100%;
     z-index: 10;
 
+    p {
+      font-size: 30px;
+      font-family: Times, Arial, "Lucida Grande", sans-serif;
+      text-align: center;
+      margin-bottom: 15px;
+    }
     img.yesca-title {
       width: 208px;
       height: 35px;
       display: block; /*for the img inside your div */
       margin: 0 auto;
       margin-top: 57px;
-      margin-bottom: 30px;
+      margin-bottom: 15px;
       cursor: pointer;
     }
 
   }
   .box-shadow {
-    -webkit-box-shadow: 0px 13px 30px -8px rgba(0,0,0,0.1);
-    -moz-box-shadow: 0px 13px 30px -8px rgba(0,0,0,0.1);
-    box-shadow: 0px 13px 30px -8px rgba(0,0,0,0.1);
+    -webkit-box-shadow: 0px 13px 30px -8px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0px 13px 30px -8px rgba(0,0,0,0.2);
+    box-shadow: 0px 13px 30px -8px rgba(0,0,0,0.2);
   }
   .not-active {
     display: none;
@@ -186,7 +192,7 @@ body {
     display: none;
   }
   h3, h6 {
-    font-weight: 200;
+    font-weight: 400;
   }
   .mobile-container {
 
@@ -350,6 +356,7 @@ body {
       img.dried-flower {
         margin-left: 32%;
         width: 44%;
+        padding-top: 32px;
       }
       @media screen and (max-width: 760px) {
         img.oils {
@@ -411,7 +418,7 @@ body {
       margin-right: auto;
 
         .close {
-          width: 13px;
+          width: 20px;
           cursor: pointer;
           color: #ffffff;
           margin: 23px auto 15px auto;
@@ -449,6 +456,7 @@ body {
           text-transform: uppercase;
           border: 0 none;
           cursor: pointer;
+          font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
           -webkit-border-radius: 0px;
           display: block;
           margin: 60px auto auto auto;
@@ -489,6 +497,7 @@ body {
           font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
           color: #ffffff;
           width: 292px;
+          font-weight: 300;
           position: absolute;
           left: 50%;
           bottom: 30px;
@@ -545,8 +554,9 @@ body {
       }
       button:hover {
         cursor: pointer;
-        border:1px solid #ffffff;
-        color: #ffffff;
+        background-color: #ff0000;
+        border:1px solid #000000;
+        color: #000000;
       }
     }
 
@@ -583,6 +593,11 @@ body {
         .social, .contact{
           width: 100%;
         }
+        @media screen and (max-width: 760px) {
+          .social {
+            margin-top: 30px;
+          }
+        }
       }
     }
 
@@ -590,8 +605,18 @@ body {
       margin-top: 80px;
       p {
         text-align: center;
+        font-size: 9px;
       }
     }
+    @media screen and (max-width: 760px) {
+      .copy-right {
+        margin-top: 45px;
+      }
+    }
+
   } // footer close
 
+  iframe#no-target {
+    position: fixed;
+  }
 } //body close
