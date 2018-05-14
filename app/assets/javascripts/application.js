@@ -21,7 +21,7 @@ $(function() {
         var height = $(window).scrollTop();
         var navBar = $('.navbar');
 
-        if(height  > 5) {
+        if(height  > 20) {
           navBar.addClass('box-shadow');
         } else {
           navBar.removeClass('box-shadow');
@@ -121,9 +121,11 @@ document.addEventListener('turbolinks:load', function() {
       if(height  > 5) {
         navBar.addClass('box-shadow');
         supply.addClass('not-active');
+        // supply.fadeOut(200);
       } else {
         navBar.removeClass('box-shadow');
         supply.removeClass('not-active');
+        // supply.fadeIn(200);
       }
   });
 
