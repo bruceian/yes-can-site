@@ -50,7 +50,9 @@ nav ul {
 blockquote, q {
     quotes:none;
 }
-
+button, input {
+  letter-spacing: 0.5px !important;
+}
 textarea:focus, input:focus{
     outline: none;
 }
@@ -411,7 +413,7 @@ body {
       height: 518px;
       background-color: #000000;
       position: absolute;
-      top: 40px;
+      top: 65px;
       left: 0;
       right: 0;
       margin-left: auto;
@@ -580,6 +582,7 @@ body {
         width: 30%;
         display: inline-block;
         text-align: center;
+        line-height: 14.4px;
       }
       .contact {
         margin-left: 20%;
@@ -620,4 +623,5 @@ body {
   iframe#no-target {
     position: fixed;
   }
-} //body close
+}
+ //body close
