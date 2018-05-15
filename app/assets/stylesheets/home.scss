@@ -430,8 +430,9 @@ body {
     position: relative;
     font-size: 19px;
     letter-spacing: 0.05em;
+    border-bottom: 2px solid black;
 
-    .pop-up {
+    .pop-up.subcribe-container-pop-up {
       width: 385px;
       height: 518px;
       background-color: #000000;
