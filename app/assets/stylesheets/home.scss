@@ -282,6 +282,9 @@ body {
   }
 
   @media screen and (max-width: 760px  ) {
+    .navbar img.yesca-title{
+      margin-top: 25px !important;
+    }
     .mobile-container {
       // height: 95vh;
 
@@ -300,9 +303,6 @@ body {
     }
     p.tag-line, p.i {
       font-size: 24px;
-    }
-    body .navbar img.yesca-title{
-      margin-top: 25px !important;
     }
   }
   .product-container {
