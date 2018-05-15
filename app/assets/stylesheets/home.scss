@@ -359,8 +359,8 @@ body {
         width: 82%;
       }
       img.dried-flower {
-        margin-left: 22%;
-        width: 60%;
+        margin-left: 10%;
+        width: 76%;
         padding-top: 32px;
       }
       @media screen and (max-width: 760px) {
@@ -373,8 +373,8 @@ body {
           width: 170%;
         }
         img.dried-flower {
-          margin-left: -15%;
-          width: 140%;
+          margin-left: -38%;
+          width: 165%;
         }
       }
       .label {
@@ -631,5 +631,12 @@ body {
   color: black;
   margin-top: 400px;
   text-align: center;
+}
+
+body.index, body.underage, {
+  background-color: #ffff00;
+  .navbar {
+    background-color: #ffff00;
+  }
 }
  //body close
