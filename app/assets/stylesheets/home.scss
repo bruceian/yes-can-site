@@ -281,7 +281,7 @@ body {
     }
   }
 
-  @media screen and (max-width: 760px) {
+  @media screen and (max-width: 760px  ) {
     .mobile-container {
       // height: 95vh;
 
@@ -301,8 +301,8 @@ body {
     p.tag-line, p.i {
       font-size: 24px;
     }
-    img.yesca-title {
-      margin-top: 30px !important;
+    body .navbar img.yesca-title{
+      margin-top: 25px !important;
     }
   }
   .product-container {
@@ -326,15 +326,17 @@ body {
       margin-left: 7%;
     }
     @media screen and (max-width: 760px) {
-      p {
+      p.top {
         margin-top: 55px;
+      }
+      p {
         font-size: 24px;
         line-height: 30px;
       }
     }
     .product {
       display: block;
-      margin-top: 160px;
+      margin-top: 117px;
 
       .img-wrap {
         display: block;
@@ -349,16 +351,16 @@ body {
         width: 100%;
       }
       img.oils {
-        margin-left: 33%;
-        width: 48%;
+        margin-left: 23%;
+        width: 78%;
       }
       img.pre-roll {
-        margin-left: 36%;
-        width: 57%;
+        margin-left: 16%;
+        width: 82%;
       }
       img.dried-flower {
-        margin-left: 32%;
-        width: 44%;
+        margin-left: 22%;
+        width: 60%;
         padding-top: 32px;
       }
       @media screen and (max-width: 760px) {
@@ -367,12 +369,12 @@ body {
           width: 100%;
         }
         img.pre-roll {
-          margin-left: 11%;
+          margin-left: -20%;
           width: 170%;
         }
         img.dried-flower {
-          margin-left: 0%;
-          width: 129%;
+          margin-left: -15%;
+          width: 140%;
         }
       }
       .label {
