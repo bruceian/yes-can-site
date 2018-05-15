@@ -283,14 +283,14 @@ body {
 
   @media screen and (max-width: 760px) {
     .mobile-container {
-      height: 95vh;
+      // height: 95vh;
 
       p {
         line-height: 23px !important;
       }
     }
     img.gradient {
-      height: 70%;
+      height: 70vh;
       width: 83.33333% !important;
       margin-left: 8.3333%;
       margin-top: 96px !important;
@@ -327,6 +327,7 @@ body {
     }
     @media screen and (max-width: 760px) {
       p {
+        margin-top: 55px;
         font-size: 24px;
         line-height: 30px;
       }
