@@ -72,7 +72,8 @@ a {
     color: #000000;
 }
 a:hover {
-  text-decoration: none;
+  transition: 0.2s;
+  text-decoration: underline;
 }
 /* change colours to suit your needs */
 ins {
@@ -145,9 +146,31 @@ body {
   font-family: Helvetica, Arial, "Lucida Grande", sans-serif;
   overflow-x: hidden;
 
+  // .down {
+  //     transform: rotate(45deg);
+  //     -webkit-transform: rotate(45deg);
+  //     border: solid black;
+  //     border-width: 0 3px 3px 0;
+  //     display: inline-block;
+  //     padding: 3px;
+  // }
+
   @media screen and (max-width: 760px) {
     .xs-display-none {
-      display: none;
+      display: none !important;
+    }
+  }
+  @media screen and (max-width: 760px) {
+    .xs-display-show {
+      display: block !important;
+    }
+    .xs-display-show.arrow {
+      display: inline-block !important;
+    }
+  }
+  @media screen and (min-width: 760px) {
+    .xs-display-show {
+      display: none !important;
     }
   }
   .navbar {
@@ -228,7 +251,7 @@ body {
       height: 518px;
       background-color: #ffff00;
       position: absolute;
-      top: 191px;
+      top: 110px;
       left: 0;
       right: 0;
       margin-left: auto;
@@ -258,7 +281,7 @@ body {
         height: 35px;
         width: 203px;
         cursor: pointer;
-        border: 1px solid #000000;
+        border: 1.5px solid #000000 !important;
         color: #ffff00;
         border: #000000;
         background-color: #000000;
@@ -273,7 +296,7 @@ body {
     @media screen and (max-width: 760px) {
       .pop-up {
         width: 84%;
-        top: 96px;
+        top: 60px;
       }
       p.tag-line {
         margin-top: 27px;
@@ -281,17 +304,13 @@ body {
     }
   }
 
-  @media screen and (max-width: 760px  ) {
-    .navbar img.yesca-title{
-      margin-top: 25px !important;
-    }
+  @media screen and (max-width: 760px) {
     .mobile-container {
-      // height: 95vh;
-
       p {
         line-height: 23px !important;
       }
     }
+
     img.gradient {
       height: 70vh;
       width: 83.33333% !important;
@@ -402,7 +421,7 @@ body {
   }
   .subscribe-container {
     overflow-x: hidden;
-    background-color: #ff0000;
+    background-color: #ffffff;
     width: 100%;
     display: block;
     height: 650px;
@@ -549,7 +568,7 @@ body {
         transition: 0.2s;
         height: 35px;
         width: 203px;
-        color: #ff0000;
+        color: #ffffff;
         border: 1.5px solid #000000;
         background-color: #000000;
         font-size: 19px;
@@ -559,7 +578,7 @@ body {
       }
       button:hover {
         cursor: pointer;
-        background-color: #ff0000;
+        background-color: #ffffff;
         border:1.5px solid #000000;
         color: #000000;
         font-weight: 400;
@@ -637,6 +656,11 @@ body.index, body.underage, {
   background-color: #ffff00;
   .navbar {
     background-color: #ffff00;
+  }
+}
+@media screen and (max-width: 760px) {
+  body .navbar img.yesca-title {
+    margin-top: 25px !important;
   }
 }
  //body close

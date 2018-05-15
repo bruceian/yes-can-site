@@ -6,15 +6,27 @@
     <!-- <div class="navbar">
       <%= image_tag("yesca-title.svg", alt: "yesca", class: "yesca-title")%>
     </div> -->
-    <%= image_tag("animation.gif", alt: "green and blue gradient", class: "gradient")%>
+    <%= image_tag("yesca-gif-mobile.gif", alt: "green and blue gradient", class: "gradient xs-display-show")%>
+    <%= image_tag("animation.gif", alt: "green and blue gradient", class: "gradient xs-display-none")%>
+    <!-- <i class="arrow down xs-display-show"></i> -->
   </div>
 
   <div class="product-container">
-    <p class="top">
+    <p class="top xs-display-none ">
       We specialize in bringing you the highest quality in Canadian <br />
       cannabis products. Created with care and a meticulous<br/>
       attention to detail, our collection is 100% natural and is designed <br  />
       with you and your lifestyle in mind.
+    </p>
+    <p class="top xs-display-show">
+      We specialize in bringing<br />
+      you the highest quality in<br />
+      Canadian cannabis products.<br />
+      Created with care and a<br/>
+      meticulous attention to detail,<br/>
+       our collection is 100% natural<br/>
+      and is designed with you<br/>
+      and your lifestyle in mind.
     </p>
       <div class="product">
         <div class="img-wrap">
@@ -112,7 +124,7 @@
           55 Bruce Crescent, Carleton Place, ON K7C 3T3
         </p>
         <p>
-          <a href="#">info@yescasupply.com</a>
+          <a href="mailto:info@yescasupply.com">info@yescasupply.com</a>
         </p>
       </div>
       <div class="social">
@@ -121,8 +133,10 @@
           Follow us on Social Media
         </p>
         <p>
-          <a href="https://www.instagram.com/yescasupply/">Instagram /</a>
-          <a href="https://twitter.com/yescasupply">Twitter / </a>
+          <a href="https://www.instagram.com/yescasupply/">Instagram</a>
+          <span>/</span>
+          <a href="https://twitter.com/yescasupply">Twitter</a>
+          <span>/</span>
           <a href="https://www.facebook.com/yescasupply">Facebook</a>
         </p>
       </div>
